@@ -14,3 +14,12 @@ h3 {
 .rating span {
     margin: 0.1rem;
 }
+
+.productPrice {
+    padding-top: 1em;
+}
+
+.buttonContainer {
+    padding-top: 1.5em;
+
+}
