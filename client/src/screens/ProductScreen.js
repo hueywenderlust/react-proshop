@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios'
 
 
-const ProductScreen = ({match}) => {
+const ProductScreen = () => {
 
     const { id } = useParams();
 
@@ -20,7 +20,7 @@ const ProductScreen = ({match}) => {
         } 
     
         fetchProduct()
-      }, []);
+      }, [id]);
 
 
     // const product = products.find((p) => String(p._id) === id);
