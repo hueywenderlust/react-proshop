@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
-import {Row, Col, Image, ListGroup, Card, Button, ListGroupItem} from 'react-bootstrap'
+import {Row, Col, Image, ListGroup, Button, ListGroupItem} from 'react-bootstrap'
 import Rating from '../components/Rating'
 import { useParams } from 'react-router-dom';
 import axios from 'axios'
