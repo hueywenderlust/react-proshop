@@ -26,15 +26,18 @@ const LoginScreen = () => {
     useEffect(() => {
         console.log('user info', userInfo)
         console.log('redirect', redirect)
+
+        const user = JSON.parse(localStorage.getItem('userInfo'));
+
+        console.log('user info', user);
+
         // if (userInfo.userInfo !== null) {
-        if (userInfo) {
+        if (user !== null) {
 
 
             console.log('user info exist');
             navigate(redirect)
         }
-        console.log('no user info, user not sign in');
-
     }, [userInfo, navigate, redirect])
 
     const submitHandler = (e) => {
